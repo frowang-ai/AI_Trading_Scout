@@ -1,0 +1,6 @@
+import os
+
+TUSHARE_TOKEN = os.getenv("TUSHARE_TOKEN")
+MARKET_INDEX_TS_CODE = os.getenv("MARKET_INDEX_TS_CODE", "000001.SH")
+HISTORY_DAYS = int(os.getenv("HISTORY_DAYS", "90"))
+

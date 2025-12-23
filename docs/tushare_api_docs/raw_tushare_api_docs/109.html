@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushare数据</title>
+<meta content="免费股票数据,开源股票数据接口,股票数据,股票数据接口,python股票数据,财经数据,金融数据,行业大数据,区块链数据,量化投资,知识图谱" name="keywords"/>
+<meta name="description" content="Tushare为金融数据分析提供便捷、快速的接口，与投研和量化策略无缝对接"/>
+<meta content="index,follow" name="robots"/>
+<meta name="application-name" content="Tushare"/>
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-192x192.png?v=811d9139fa2ea47f5595907da1f3c34d" sizes="192x192">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-96x96.png?v=4960eb8103c873c586ad41ef3f53db84" sizes="96x96">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-16x16.png?v=f7299bbce2cff4db7e3dfa6fb8c6a73c" sizes="16x16">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-32x32.png?v=a5df4bdd9f96de59f57bb9a7a50d8f96" sizes="32x32">
+<link href="/static/vendors/bootstrap/dist/css/bootstrap.min.css?v=d7ac98c842e4ec59d2c21fef89fce09c" rel="stylesheet">
+<link href="/static/vendors/jstree/themes/default/style.min.css?v=779fc4b400d1748ec2fb99685ad80550" rel="stylesheet">
+<link href="/static/frontend/css/custom.css?v=4fa43e55f2c16eefe67590de5aa70309" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/static/vendors/codemirror/lib/codemirror.css?v=fc217d502b05f65616356459c0ec1d62">
+<link rel="stylesheet" href="/static/vendors/tui-editor/dist/tui-editor.css?v=144c2e273b8a0e79b208d0d86ccd3999">
+<link rel="stylesheet" href="/static/vendors/tui-editor/dist/tui-editor-contents.css?v=3ed3a3154a2304c111075714324b0e7b">
+<link rel="stylesheet" href="/static/vendors/highlightjs/styles/github.css?v=bf6c14925e66edb1526b6c9489b3c042">
+<link rel="stylesheet" href="/static/common/css/md.css?v=087ce310ed8e685ac6526e2a54db3c68">
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/static/vendors/requirejs/require.js?v=6da8be361b9ee26c5e721e76c6d4afce"></script>
+<script type="text/javascript" src="/static/frontend/js/config.js?v=85f0040a930464e1c6dbc61026f79de8"></script>
+</head>
+<body style="height:100%">
+<div id="page" style="height:100%;">
+<header id="header" class="site-header">
+<nav id="navbar" class="site-navbar navbar navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars" style="font-size: 1.5em; padding: 15px 0;"></i>
+</button>
+<h1 class="navbar-brand">
+<a href="/"><img src="/static/frontend/images/logo.png?v=39c50795cb540b4463114d1bf3135d6e" alt="tushare"></a>
+</h1>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul id="navigation" class="nav navbar-nav navbar-right">
+<li><a href="/">首页</a></li>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+<!-- <li><a href="/document/41">另类数据</a></li>-->
+<li><a href="/news/sina">资讯数据</a></li>
+<li><a href="/webclient">数据工具</a></li>
+
+<li class="navbar-tail"><a href="/login" class="btn btn-xs pull-right">登 录</a><a href="/register" class="btn btn-xs pull-right">注 册</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+
+<section id="document" class="whole">
+<div class="container">
+<div class="document">
+<nav class="sidebar col-md-3 col-sm-4 col-xs-12">
+
+            <div id="jstree">
+                <ul class="list-unstyled components">
+                    
+                    <li class=" jstree-open  in"><a href="/document/2?doc_id=14">股票数据</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=24">基础数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=25">股票列表</a></li> <li ><a href="/document/2?doc_id=329">每日股本（盘前）</a></li> <li ><a href="/document/2?doc_id=26">交易日历</a></li> <li ><a href="/document/2?doc_id=397">ST股票列表</a></li> <li ><a href="/document/2?doc_id=398">沪深港通股票列表</a></li> <li ><a href="/document/2?doc_id=100">股票曾用名</a></li> <li ><a href="/document/2?doc_id=112">上市公司基本信息</a></li> <li ><a href="/document/2?doc_id=193">上市公司管理层</a></li> <li ><a href="/document/2?doc_id=194">管理层薪酬和持股</a></li> <li ><a href="/document/2?doc_id=375">北交所新旧代码对照</a></li> <li ><a href="/document/2?doc_id=123">IPO新股上市</a></li> <li ><a href="/document/2?doc_id=262">股票历史列表</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class=" jstree-open  in"><a href="/document/2?doc_id=15">行情数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=27">历史日线</a></li> <li ><a href="/document/2?doc_id=372">实时日线</a></li> <li ><a href="/document/2?doc_id=370">历史分钟</a></li> <li ><a href="/document/2?doc_id=374">实时分钟</a></li> <li ><a href="/document/2?doc_id=144">周线行情</a></li> <li ><a href="/document/2?doc_id=145">月线行情</a></li> <li ><a href="/document/2?doc_id=146">复权行情</a></li> <li ><a href="/document/2?doc_id=336">周/月线行情(每日更新)</a></li> <li ><a href="/document/2?doc_id=365">周/月线复权行情(每日更新)</a></li> <li ><a href="/document/2?doc_id=28">复权因子</a></li> <li ><a href="/document/2?doc_id=315">实时Tick（爬虫）</a></li> <li ><a href="/document/2?doc_id=316">实时成交（爬虫）</a></li> <li ><a href="/document/2?doc_id=317">实时排名（爬虫）</a></li> <li ><a href="/document/2?doc_id=32">每日指标</a></li> <li class="active jstree-clicked "  ><a href="/document/2?doc_id=109">通用行情接口</a></li> <li ><a href="/document/2?doc_id=183">每日涨跌停价格</a></li> <li ><a href="/document/2?doc_id=214">每日停复牌信息</a></li> <li ><a href="/document/2?doc_id=48">沪深股通十大成交股</a></li> <li ><a href="/document/2?doc_id=49">港股通十大成交股</a></li> <li ><a href="/document/2?doc_id=196">港股通每日成交统计</a></li> <li ><a href="/document/2?doc_id=197">港股通每月成交统计</a></li> <li ><a href="/document/2?doc_id=255">备用行情</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=16">财务数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=33">利润表</a></li> <li ><a href="/document/2?doc_id=36">资产负债表</a></li> <li ><a href="/document/2?doc_id=44">现金流量表</a></li> <li ><a href="/document/2?doc_id=45">业绩预告</a></li> <li ><a href="/document/2?doc_id=46">业绩快报</a></li> <li ><a href="/document/2?doc_id=103">分红送股数据</a></li> <li ><a href="/document/2?doc_id=79">财务指标数据</a></li> <li ><a href="/document/2?doc_id=80">财务审计意见</a></li> <li ><a href="/document/2?doc_id=81">主营业务构成</a></li> <li ><a href="/document/2?doc_id=162">财报披露日期表</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=17">参考数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=61">前十大股东</a></li> <li ><a href="/document/2?doc_id=62">前十大流通股东</a></li> <li ><a href="/document/2?doc_id=110">股权质押统计数据</a></li> <li ><a href="/document/2?doc_id=111">股权质押明细数据</a></li> <li ><a href="/document/2?doc_id=124">股票回购</a></li> <li ><a href="/document/2?doc_id=160">限售股解禁</a></li> <li ><a href="/document/2?doc_id=161">大宗交易</a></li> <li ><a href="/document/2?doc_id=164">股票开户数据（停）</a></li> <li ><a href="/document/2?doc_id=165">股票开户数据（旧）</a></li> <li ><a href="/document/2?doc_id=166">股东人数</a></li> <li ><a href="/document/2?doc_id=175">股东增减持</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=291">特色数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=292">券商盈利预测数据</a></li> <li ><a href="/document/2?doc_id=293">每日筹码及胜率</a></li> <li ><a href="/document/2?doc_id=294">每日筹码分布</a></li> <li ><a href="/document/2?doc_id=296">股票技术面因子</a></li> <li ><a href="/document/2?doc_id=328">股票技术面因子(专业版）</a></li> <li ><a href="/document/2?doc_id=295">中央结算系统持股统计</a></li> <li ><a href="/document/2?doc_id=274">中央结算系统持股明细</a></li> <li ><a href="/document/2?doc_id=188">沪深股通持股明细</a></li> <li ><a href="/document/2?doc_id=353">股票开盘集合竞价数据</a></li> <li ><a href="/document/2?doc_id=354">股票收盘集合竞价数据</a></li> <li ><a href="/document/2?doc_id=364">神奇九转指标</a></li> <li ><a href="/document/2?doc_id=399">AH股比价</a></li> <li ><a href="/document/2?doc_id=275">机构调研数据</a></li> <li ><a href="/document/2?doc_id=267">券商月度金股</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=330">两融及转融通</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=58">融资融券交易汇总</a></li> <li ><a href="/document/2?doc_id=59">融资融券交易明细</a></li> <li ><a href="/document/2?doc_id=326">融资融券标的（盘前）</a></li> <li ><a href="/document/2?doc_id=332">转融券交易汇总(停）</a></li> <li ><a href="/document/2?doc_id=331">转融资交易汇总</a></li> <li ><a href="/document/2?doc_id=333">转融券交易明细(停）</a></li> <li ><a href="/document/2?doc_id=334">做市借券交易汇总(停）</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=342">资金流向数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=170">个股资金流向</a></li> <li ><a href="/document/2?doc_id=348">个股资金流向（THS）</a></li> <li ><a href="/document/2?doc_id=349">个股资金流向（DC）</a></li> <li ><a href="/document/2?doc_id=371">板块资金流向（THS)</a></li> <li ><a href="/document/2?doc_id=343">行业资金流向（THS）</a></li> <li ><a href="/document/2?doc_id=344">板块资金流向（DC）</a></li> <li ><a href="/document/2?doc_id=345">大盘资金流向（DC）</a></li> <li ><a href="/document/2?doc_id=47">沪深港通资金流向</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=346">打板专题数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=106">龙虎榜每日统计单</a></li> <li ><a href="/document/2?doc_id=107">龙虎榜机构交易单</a></li> <li ><a href="/document/2?doc_id=355">同花顺涨跌停榜单</a></li> <li ><a href="/document/2?doc_id=298">涨跌停和炸板数据</a></li> <li ><a href="/document/2?doc_id=356">涨停股票连板天梯</a></li> <li ><a href="/document/2?doc_id=357">涨停最强板块统计</a></li> <li ><a href="/document/2?doc_id=259">同花顺行业概念板块</a></li> <li ><a href="/document/2?doc_id=260">同花顺概念和行业指数行情</a></li> <li ><a href="/document/2?doc_id=261">同花顺行业概念成分</a></li> <li ><a href="/document/2?doc_id=362">东方财富概念板块</a></li> <li ><a href="/document/2?doc_id=363">东方财富概念成分</a></li> <li ><a href="/document/2?doc_id=382">东财概念和行业指数行情</a></li> <li ><a href="/document/2?doc_id=369">开盘竞价成交（当日）</a></li> <li ><a href="/document/2?doc_id=311">市场游资最全名录</a></li> <li ><a href="/document/2?doc_id=312">游资交易每日明细</a></li> <li ><a href="/document/2?doc_id=320">同花顺App热榜数</a></li> <li ><a href="/document/2?doc_id=321">东方财富App热榜</a></li> <li ><a href="/document/2?doc_id=376">通达信板块信息</a></li> <li ><a href="/document/2?doc_id=377">通达信板块成分</a></li> <li ><a href="/document/2?doc_id=378">通达信板块行情</a></li> <li ><a href="/document/2?doc_id=347">榜单数据（开盘啦）</a></li> <li ><a href="/document/2?doc_id=350">题材数据（开盘啦）</a></li> <li ><a href="/document/2?doc_id=351">题材成分（开盘啦）</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=384">ETF专题</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=385">ETF基本信息</a></li> <li ><a href="/document/2?doc_id=386">ETF基准指数</a></li> <li ><a href="/document/2?doc_id=387">ETF分钟行情</a></li> <li ><a href="/document/2?doc_id=400">ETF实时日线</a></li> <li ><a href="/document/2?doc_id=127">ETF日线行情</a></li> <li ><a href="/document/2?doc_id=199">ETF复权因子</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=93">指数专题</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=94">指数基本信息</a></li> <li ><a href="/document/2?doc_id=95">指数日线行情</a></li> <li ><a href="/document/2?doc_id=403">指数实时日线</a></li> <li ><a href="/document/2?doc_id=171">指数周线行情</a></li> <li ><a href="/document/2?doc_id=172">指数月线行情</a></li> <li ><a href="/document/2?doc_id=96">指数成分和权重</a></li> <li ><a href="/document/2?doc_id=128">大盘指数每日指标</a></li> <li ><a href="/document/2?doc_id=181">申万行业分类</a></li> <li ><a href="/document/2?doc_id=335">申万行业成分（分级）</a></li> <li ><a href="/document/2?doc_id=327">申万行业指数日行情</a></li> <li ><a href="/document/2?doc_id=373">中信行业成分</a></li> <li ><a href="/document/2?doc_id=308">中信行业指数日行情</a></li> <li ><a href="/document/2?doc_id=211">国际主要指数</a></li> <li ><a href="/document/2?doc_id=358">指数技术面因子(专业版)</a></li> <li ><a href="/document/2?doc_id=215">沪深市场每日交易统计</a></li> <li ><a href="/document/2?doc_id=268">深圳市场每日交易情况</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=18">公募基金</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=19">基金列表</a></li> <li ><a href="/document/2?doc_id=118">基金管理人</a></li> <li ><a href="/document/2?doc_id=208">基金经理</a></li> <li ><a href="/document/2?doc_id=207">基金规模</a></li> <li ><a href="/document/2?doc_id=119">基金净值</a></li> <li ><a href="/document/2?doc_id=120">基金分红</a></li> <li ><a href="/document/2?doc_id=121">基金持仓</a></li> <li ><a href="/document/2?doc_id=359">基金技术面因子(专业版)</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=134">期货数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=135">合约信息</a></li> <li ><a href="/document/2?doc_id=137">交易日历</a></li> <li ><a href="/document/2?doc_id=138">日线行情</a></li> <li ><a href="/document/2?doc_id=337">期货周/月线行情(每日更新)</a></li> <li ><a href="/document/2?doc_id=313">历史分钟行情</a></li> <li ><a href="/document/2?doc_id=340">实时分钟行情</a></li> <li ><a href="/document/2?doc_id=140">仓单日报</a></li> <li ><a href="/document/2?doc_id=141">每日结算参数</a></li> <li ><a href="/document/2?doc_id=314">历史Tick行情</a></li> <li ><a href="/document/2?doc_id=139">每日持仓排名</a></li> <li ><a href="/document/2?doc_id=155">南华期货指数行情</a></li> <li ><a href="/document/2?doc_id=189">期货主力与连续合约</a></li> <li ><a href="/document/2?doc_id=216">期货主要品种交易周报</a></li> <li ><a href="/document/2?doc_id=368">期货合约涨跌停价格</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=283">现货数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=284">上海黄金基础信息</a></li> <li ><a href="/document/2?doc_id=285">上海黄金现货日行情</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=157">期权数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=158">期权合约信息</a></li> <li ><a href="/document/2?doc_id=159">期权日线行情</a></li> <li ><a href="/document/2?doc_id=341">期权分钟行情</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=184">债券专题</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=185">可转债基础信息</a></li> <li ><a href="/document/2?doc_id=186">可转债发行</a></li> <li ><a href="/document/2?doc_id=269">可转债赎回信息</a></li> <li ><a href="/document/2?doc_id=305">可转债票面利率</a></li> <li ><a href="/document/2?doc_id=187">可转债行情</a></li> <li ><a href="/document/2?doc_id=392">可转债技术面因子(专业版）</a></li> <li ><a href="/document/2?doc_id=246">可转债转股价变动</a></li> <li ><a href="/document/2?doc_id=247">可转债转股结果</a></li> <li ><a href="/document/2?doc_id=256">债券回购日行情</a></li> <li ><a href="/document/2?doc_id=322">柜台流通式债券报价</a></li> <li ><a href="/document/2?doc_id=323">柜台流通式债券最优报价</a></li> <li ><a href="/document/2?doc_id=271">大宗交易</a></li> <li ><a href="/document/2?doc_id=272">大宗交易明细</a></li> <li ><a href="/document/2?doc_id=201">国债收益率曲线</a></li> <li ><a href="/document/2?doc_id=233">全球财经事件</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=177">外汇数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=178">外汇基础信息（海外）</a></li> <li ><a href="/document/2?doc_id=179">外汇日线行情</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=190">港股数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=191">港股基础信息</a></li> <li ><a href="/document/2?doc_id=250">港股交易日历</a></li> <li ><a href="/document/2?doc_id=192">港股日线行情</a></li> <li ><a href="/document/2?doc_id=339">港股复权行情</a></li> <li ><a href="/document/2?doc_id=401">港股复权因子</a></li> <li ><a href="/document/2?doc_id=304">港股分钟行情</a></li> <li ><a href="/document/2?doc_id=383">港股实时日线</a></li> <li ><a href="/document/2?doc_id=389">港股利润表</a></li> <li ><a href="/document/2?doc_id=390">港股资产负债表</a></li> <li ><a href="/document/2?doc_id=391">港股现金流量表</a></li> <li ><a href="/document/2?doc_id=388">港股财务指标数据</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=251">美股数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=252">美股基础信息</a></li> <li ><a href="/document/2?doc_id=253">美股交易日历</a></li> <li ><a href="/document/2?doc_id=254">美股日线行情</a></li> <li ><a href="/document/2?doc_id=338">美股复权行情</a></li> <li ><a href="/document/2?doc_id=402">美股复权因子</a></li> <li ><a href="/document/2?doc_id=394">美股利润表</a></li> <li ><a href="/document/2?doc_id=395">美股资产负债表</a></li> <li ><a href="/document/2?doc_id=396">美股现金流量表</a></li> <li ><a href="/document/2?doc_id=393">美股财务指标数据</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=82">行业经济</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=83">TMT行业</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=88">台湾电子产业月营收</a></li> <li ><a href="/document/2?doc_id=87">台湾电子产业月营收明细</a></li> <li ><a href="/document/2?doc_id=113">电影月度票房</a></li> <li ><a href="/document/2?doc_id=114">电影周度票房</a></li> <li ><a href="/document/2?doc_id=115">电影日度票房</a></li> <li ><a href="/document/2?doc_id=116">影院日度票房</a></li> <li ><a href="/document/2?doc_id=156">全国电影剧本备案数据</a></li> <li ><a href="/document/2?doc_id=180">全国电视剧备案公示数据</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=147">宏观经济</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=224">国内宏观</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=148">利率数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=149">Shibor利率</a></li> <li ><a href="/document/2?doc_id=150">Shibor报价数据</a></li> <li ><a href="/document/2?doc_id=151">LPR贷款基础利率</a></li> <li ><a href="/document/2?doc_id=152">Libor利率</a></li> <li ><a href="/document/2?doc_id=153">Hibor利率</a></li> <li ><a href="/document/2?doc_id=173">温州民间借贷利率</a></li> <li ><a href="/document/2?doc_id=174">广州民间借贷利率</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=225">国民经济</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=227">国内生产总值（GDP）</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=226">价格指数</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=228">居民消费价格指数（CPI）</a></li> <li ><a href="/document/2?doc_id=245">工业生产者出厂价格指数（PPI）</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=240">金融</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=241">货币供应量</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=242">货币供应量（月）</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=309">社会融资</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=310">社融增量（月度）</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=324">景气度</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=325">采购经理指数（PMI）</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                 
+                    <li class="  in"><a href="/document/2?doc_id=217">国际宏观</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=218">美国利率</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=219">国债收益率曲线利率</a></li> <li ><a href="/document/2?doc_id=220">国债实际收益率曲线利率</a></li> <li ><a href="/document/2?doc_id=221">短期国债利率</a></li> <li ><a href="/document/2?doc_id=222">国债长期利率</a></li> <li ><a href="/document/2?doc_id=223">国债长期利率平均值</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=142">大模型语料专题数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=143">新闻快讯（短讯）</a></li> <li ><a href="/document/2?doc_id=195">新闻通讯（长篇）</a></li> <li ><a href="/document/2?doc_id=154">新闻联播文字稿</a></li> <li ><a href="/document/2?doc_id=176">上市公司公告</a></li> <li ><a href="/document/2?doc_id=366">上证e互动问答</a></li> <li ><a href="/document/2?doc_id=367">深证易互动问答</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="  in"><a href="/document/2?doc_id=263">财富管理</a>
+                        <ul class="list-unstyled">
+                            
+                    <li class="  in"><a href="/document/2?doc_id=264">基金销售行业数据</a>
+                        <ul class="list-unstyled">
+                            <li ><a href="/document/2?doc_id=265">各渠道公募基金销售保有规模占比</a></li> <li ><a href="/document/2?doc_id=266">销售机构公募基金销售保有规模</a></li>
+                        </ul>
+                    </li>
+                
+                        </ul>
+                    </li>
+                  <li ><a href="/document/2?doc_id=209">数据索引</a></li>  <li ><a href="/document/2?doc_id=244">社区捐助</a></li>
+                </ul>
+            </div>
+        
+</nav>
+<div class="content col-md-9 col-sm-8 col-xs-12">
+<div class="search-panel">
+<div class="search-container">
+<span class="fa fa-search search-icon"></span>
+<input type="text" class="search-input" placeholder="Search">
+</div>
+</div>
+<h2 id="通用行情接口">通用行情接口</h2>
+<hr>
+<p><strong>接口名称</strong>：pro_bar，本接口是集成开发接口，部分指标是现用现算<br><strong>更新时间</strong>：股票和指数通常在15点～17点之间，数字货币实时更新，具体请参考各接口文档明细。<br><strong>描述</strong>：目前整合了股票（未复权、前复权、后复权）、指数、数字货币、ETF基金、期货、期权的行情数据，未来还将整合包括外汇在内的所有交易行情数据，同时提供分钟数据。不同数据对应不同的积分要求，具体请参阅每类数据的文档说明。<br><strong>其它</strong>：由于本接口是集成接口，在SDK层做了一些逻辑处理，目前暂时没法用http的方式调取通用行情接口。用户可以访问Tushare的Github，查看源代码完成类似功能。</p>
+<p><strong>输入参数</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必选</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ts_code</td>
+<td>str</td>
+<td>Y</td>
+<td>证券代码，不支持多值输入，多值输入获取结果会有重复记录</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>str</td>
+<td>N</td>
+<td>开始日期 (日线格式：YYYYMMDD，提取分钟数据请用2019-09-01 09:00:00这种格式)</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>str</td>
+<td>N</td>
+<td>结束日期 (日线格式：YYYYMMDD)</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>str</td>
+<td>Y</td>
+<td>资产类别：E股票 I沪深指数 C数字货币 FT期货 FD基金 O期权 CB可转债（v1.2.39），默认E</td>
+</tr>
+<tr>
+<td>adj</td>
+<td>str</td>
+<td>N</td>
+<td>复权类型(只针对股票)：None未复权 qfq前复权 hfq后复权 , 默认None，<strong>目前只支持日线复权</strong>，同时复权机制是根据设定的end_date参数动态复权，采用分红再投模式，具体请参考<a href="https://tushare.pro/document/1?doc_id=122">常见问题列表</a>里的说明。</td>
+</tr>
+<tr>
+<td>freq</td>
+<td>str</td>
+<td>Y</td>
+<td>数据频度 ：支持分钟(min)/日(D)/周(W)/月(M)K线，其中1min表示1分钟（类推1/5/15/30/60分钟） ，默认D。对于分钟数据有600积分用户可以试用（请求2次），正式权限可以参考<a href="https://tushare.pro/document/1?doc_id=290"><u>权限列表说明</u></a></font> ，使用方法请参考<a href="https://tushare.pro/document/1?doc_id=234">股票分钟使用方法</a>。</td>
+</tr>
+<tr>
+<td>ma</td>
+<td>list</td>
+<td>N</td>
+<td>均线，支持任意合理int数值。注：均线是动态计算，要设置一定时间范围才能获得相应的均线，比如5日均线，开始和结束日期参数跨度必须要超过5日。目前只支持单一个股票提取均线，即需要输入ts_code参数。e.g: ma_5表示5日均价，ma_v_5表示5日均量</td>
+</tr>
+<tr>
+<td>factors</td>
+<td>list</td>
+<td>N</td>
+<td>股票因子（asset=&#39;E&#39;有效）支持 tor换手率 vr量比</td>
+</tr>
+<tr>
+<td>adjfactor</td>
+<td>str</td>
+<td>N</td>
+<td>复权因子，在复权数据时，如果此参数为True，返回的数据中则带复权因子，默认为False。 该功能从1.2.33版本开始生效</td>
+</tr>
+</tbody></table>
+<br>
+
+<p><strong>输出指标</strong></p>
+<p>具体输出的数据指标可参考各行情具体指标：</p>
+<p>股票Daily：<a href="https://tushare.pro/document/2?doc_id=27">https://tushare.pro/document/2?doc_id=27</a></p>
+<p>基金Daily：<a href="https://tushare.pro/document/2?doc_id=127">https://tushare.pro/document/2?doc_id=127</a></p>
+<p>期货Daily：<a href="https://tushare.pro/document/2?doc_id=138">https://tushare.pro/document/2?doc_id=138</a></p>
+<p>期权Daily：<a href="https://tushare.pro/document/2?doc_id=159">https://tushare.pro/document/2?doc_id=159</a></p>
+<p>指数Daily：<a href="https://tushare.pro/document/2?doc_id=95">https://tushare.pro/document/2?doc_id=95</a></p>
+<p><strong>接口用例</strong></p>
+<pre><code class="language-python">
+#取000001的前复权行情
+df = ts.pro_bar(ts_code=&#39;000001.SZ&#39;, adj=&#39;qfq&#39;, start_date=&#39;20180101&#39;, end_date=&#39;20181011&#39;)
+
+              ts_code trade_date     open     high      low    close  \
+trade_date
+20181011    000001.SZ   20181011  1085.71  1097.59  1047.90  1065.19
+20181010    000001.SZ   20181010  1138.65  1151.61  1121.36  1128.92
+20181009    000001.SZ   20181009  1130.00  1155.93  1122.44  1140.81
+20181008    000001.SZ   20181008  1155.93  1165.65  1128.92  1128.92
+20180928    000001.SZ   20180928  1164.57  1217.51  1164.57  1193.74
+</code></pre>
+<br>
+<br>
+
+
+<pre><code class="language-python">
+#取上证指数行情数据
+
+df = ts.pro_bar(ts_code=&#39;000001.SH&#39;, asset=&#39;I&#39;, start_date=&#39;20180101&#39;, end_date=&#39;20181011&#39;)
+
+In [10]: df.head()
+Out[10]:
+     ts_code trade_date      close       open       high        low  \
+0  000001.SH   20181011  2583.4575  2643.0740  2661.2859  2560.3164
+1  000001.SH   20181010  2725.8367  2723.7242  2743.5480  2703.0626
+2  000001.SH   20181009  2721.0130  2713.7319  2734.3142  2711.1971
+3  000001.SH   20181008  2716.5104  2768.2075  2771.9384  2710.1781
+4  000001.SH   20180928  2821.3501  2794.2644  2821.7553  2791.8363
+
+   pre_close    change  pct_chg          vol       amount
+0  2725.8367 -142.3792     -5.2233  197150702.0  170057762.5
+1  2721.0130    4.8237      0.1773  113485736.0  111312455.3
+2  2716.5104    4.5026      0.1657  116771899.0  110292457.8
+3  2821.3501 -104.8397     -3.7159  149501388.0  141531551.8
+4  2791.7748   29.5753      1.0594  134290456.0  125369989.4
+</code></pre>
+<br>
+<br>
+
+<pre><code class="language-python">
+#均线
+
+df = ts.pro_bar(ts_code=&#39;000001.SZ&#39;, start_date=&#39;20180101&#39;, end_date=&#39;20181011&#39;, ma=[5, 20, 50])
+</code></pre>
+<p>注：Tushare pro_bar接口的均价和均量数据是动态计算，想要获取某个时间段的均线，必须要设置start_date日期大于最大均线的日期数，然后自行截取想要日期段。例如，想要获取20190801开始的3日均线，必须设置start_date=&#39;20190729&#39;，然后剔除20190801之前的日期记录。</p>
+<br>
+<br>
+
+<pre><code class="language-python">
+#换手率tor，量比vr
+
+df = ts.pro_bar(ts_code=&#39;000001.SZ&#39;, start_date=&#39;20180101&#39;, end_date=&#39;20181011&#39;, factors=[&#39;tor&#39;, &#39;vr&#39;])
+</code></pre>
+<br>
+<br>
+
+
+<p><strong>说明</strong></p>
+<p>对于pro_api参数，如果在一开始就通过 ts.set_token(&#39;xxxx&#39;) 设置过token的情况，这个参数就不是必需的。</p>
+<p>例如：</p>
+<pre><code class="language-python">
+df = ts.pro_bar(ts_code=&#39;000001.SH&#39;, asset=&#39;I&#39;, start_date=&#39;20180101&#39;, end_date=&#39;20181011&#39;)
+</code></pre>
+
+</div>
+</div>
+</div>
+</section>
+
+<footer id="footer" class="site-footer">
+<div class="container">
+<div class="row footer-panel">
+<div class="col-md-4">
+<div class=""><img src="/static/frontend/images/wechat_public.png?v=847e8d705d3a409d000dce413ab5c257" alt=""></div>
+</div>
+<div class="col-md-4">
+<div class="title">使用文档</div>
+<div class="content">
+<ul>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+<li><a href="/document/41">区块链</a></li>
+<li><a href="/news">资讯数据</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4">
+<div class="title">关注我们</div>
+<div class="content">
+<ul>
+<li>QQ群: 958517905</li>
+<li>公众号：waditu</li>
+<li>Github：<a href="https://github.com/waditu" target="_blank">https://github.com/waditu</a></li>
+<li>雪 球：<a href="https://xueqiu.com/u/9103835084" target="_blank">https://xueqiu.com/u/9103835084</a></li>
+<li>微 博：<a href="https://weibo.com/u/1304687120" target="_blank">https://weibo.com/u/1304687120</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row footer-footer">
+<div class="copyright"><p>&copy; 2018 Tushare <a href='https://beian.miit.gov.cn' target="_blank">
+"沪ICP备2020031644号"
+</a></p></div>
+</div>
+</div>
+</footer>
+
+</div>
+<div class="scroll-to-top" data-spy="affix" data-offset-top="200">
+<a href="#page" class="smooth-scroll">置顶</a>
+</div>
+</body>
+<script type="text/javascript">
+require(['custom']);
+</script>
+
+
+<script type="text/javascript">
+require([
+'jquery',
+'jstree'
+], function ($, jstree) {
+$(document).ready(function() {
+const tree = $('#jstree').jstree({
+// plugins : ['state']
+plugins : ['wholerow'],
+core: {
+themes: {
+multiple: false,
+icons: false,
+stripes: false,
+expand_selected_onload: true
+}
+}
+});
+tree.on("select_node.jstree", function (e, data) {
+window.location = `${location.protocol}//${location.host}${data.node.a_attr.href}`;
+});
+const searchInput = document.querySelector('.search-input');
+const searchIcon = document.querySelector('.search-icon');
+const onSearch = () => {
+const query = searchInput.value;
+if (query) {
+window.location = `${location.protocol}//${location.host}/document/search?q=${encodeURIComponent(query)}`;
+}
+}
+searchInput.addEventListener('change', onSearch);
+searchIcon.addEventListener('click', onSearch);
+});
+});
+</script>
+
+</html>

@@ -1,0 +1,1183 @@
+{
+  "ETF专题": [
+    {
+      "api_name": "etf_basic",
+      "title": "ETF基础信息",
+      "doc_id": "385"
+    },
+    {
+      "api_name": "etf_index",
+      "title": "ETF基准指数列表",
+      "doc_id": "386"
+    },
+    {
+      "api_name": "fund_adj",
+      "title": "基金复权因子",
+      "doc_id": "199"
+    },
+    {
+      "api_name": "fund_daily",
+      "title": "ETF日线行情",
+      "doc_id": "127"
+    },
+    {
+      "api_name": "rt_etf_k",
+      "title": "ETF实时日线",
+      "doc_id": "400"
+    },
+    {
+      "api_name": "stk_mins",
+      "title": "ETF历史分钟行情",
+      "doc_id": "387"
+    }
+  ],
+  "债券专题": [
+    {
+      "api_name": "bc_bestotcqt",
+      "title": "柜台流通式债券最优报价",
+      "doc_id": "323"
+    },
+    {
+      "api_name": "bc_otcqt",
+      "title": "柜台流通式债券报价",
+      "doc_id": "322"
+    },
+    {
+      "api_name": "bond_blk",
+      "title": "债券大宗交易",
+      "doc_id": "271"
+    },
+    {
+      "api_name": "bond_blk_detail",
+      "title": "大宗交易明细",
+      "doc_id": "272"
+    },
+    {
+      "api_name": "cb_basic",
+      "title": "可转债基本信息",
+      "doc_id": "185"
+    },
+    {
+      "api_name": "cb_call",
+      "title": "可转债赎回信息",
+      "doc_id": "269"
+    },
+    {
+      "api_name": "cb_daily",
+      "title": "可转债行情",
+      "doc_id": "187"
+    },
+    {
+      "api_name": "cb_factor_pro",
+      "title": "可转债技术因子(专业版)",
+      "doc_id": "392"
+    },
+    {
+      "api_name": "cb_issue",
+      "title": "可转债发行",
+      "doc_id": "186"
+    },
+    {
+      "api_name": "cb_price_chg",
+      "title": "可转债转股价变动",
+      "doc_id": "246"
+    },
+    {
+      "api_name": "cb_rate",
+      "title": "可转债票面利率",
+      "doc_id": "305"
+    },
+    {
+      "api_name": "cb_share",
+      "title": "可转债转股结果",
+      "doc_id": "247"
+    },
+    {
+      "api_name": "eco_cal",
+      "title": "财经日历",
+      "doc_id": "233"
+    },
+    {
+      "api_name": "repo_daily",
+      "title": "债券回购日行情",
+      "doc_id": "256"
+    },
+    {
+      "api_name": "yc_cb",
+      "title": "国债收益率曲线",
+      "doc_id": "201"
+    }
+  ],
+  "公募基金": [
+    {
+      "api_name": "fund_basic",
+      "title": "公募基金列表",
+      "doc_id": "19"
+    },
+    {
+      "api_name": "fund_company",
+      "title": "公募基金公司",
+      "doc_id": "118"
+    },
+    {
+      "api_name": "fund_div",
+      "title": "公募基金分红",
+      "doc_id": "120"
+    },
+    {
+      "api_name": "fund_factor_pro",
+      "title": "场内基金技术因子(专业版)",
+      "doc_id": "359"
+    },
+    {
+      "api_name": "fund_manager",
+      "title": "基金经理",
+      "doc_id": "208"
+    },
+    {
+      "api_name": "fund_nav",
+      "title": "公募基金净值",
+      "doc_id": "119"
+    },
+    {
+      "api_name": "fund_portfolio",
+      "title": "公募基金持仓数据",
+      "doc_id": "121"
+    },
+    {
+      "api_name": "fund_share",
+      "title": "基金规模数据",
+      "doc_id": "207"
+    }
+  ],
+  "外汇数据": [
+    {
+      "api_name": "fx_daily",
+      "title": "外汇日线行情",
+      "doc_id": "179"
+    },
+    {
+      "api_name": "fx_obasic",
+      "title": "外汇基础信息（海外）",
+      "doc_id": "178"
+    }
+  ],
+  "大模型语料专题数据": [
+    {
+      "api_name": "anns_d",
+      "title": "上市公司全量公告",
+      "doc_id": "176"
+    },
+    {
+      "api_name": "cctv_news",
+      "title": "新闻联播",
+      "doc_id": "154"
+    },
+    {
+      "api_name": "irm_qa_sh",
+      "title": "上证E互动",
+      "doc_id": "366"
+    },
+    {
+      "api_name": "irm_qa_sz",
+      "title": "深证互动易",
+      "doc_id": "367"
+    },
+    {
+      "api_name": "major_news",
+      "title": "新闻通讯",
+      "doc_id": "195"
+    },
+    {
+      "api_name": "news",
+      "title": "新闻快讯",
+      "doc_id": "143"
+    }
+  ],
+  "宏观经济/国内宏观/价格指数": [
+    {
+      "api_name": "cn_cpi",
+      "title": "居民消费价格指数",
+      "doc_id": "228"
+    },
+    {
+      "api_name": "cn_ppi",
+      "title": "工业生产者出厂价格指数",
+      "doc_id": "245"
+    }
+  ],
+  "宏观经济/国内宏观/利率数据": [
+    {
+      "api_name": "gz_index",
+      "title": "广州民间借贷利率",
+      "doc_id": "174"
+    },
+    {
+      "api_name": "hibor",
+      "title": "Hibor利率",
+      "doc_id": "153"
+    },
+    {
+      "api_name": "libor",
+      "title": "Libor拆借利率",
+      "doc_id": "152"
+    },
+    {
+      "api_name": "shibor",
+      "title": "Shibor利率数据",
+      "doc_id": "149"
+    },
+    {
+      "api_name": "shibor_lpr",
+      "title": "LPR贷款基础利率",
+      "doc_id": "151"
+    },
+    {
+      "api_name": "shibor_quote",
+      "title": "Shibor报价数据",
+      "doc_id": "150"
+    },
+    {
+      "api_name": "wz_index",
+      "title": "温州民间借贷利率",
+      "doc_id": "173"
+    }
+  ],
+  "宏观经济/国内宏观/国民经济": [
+    {
+      "api_name": "cn_gdp",
+      "title": "GDP数据",
+      "doc_id": "227"
+    }
+  ],
+  "宏观经济/国内宏观/景气度": [
+    {
+      "api_name": "cn_pmi",
+      "title": "采购经理人指数",
+      "doc_id": "325"
+    }
+  ],
+  "宏观经济/国内宏观/金融/社会融资": [
+    {
+      "api_name": "sf_month",
+      "title": "社融数据（月度）",
+      "doc_id": "310"
+    }
+  ],
+  "宏观经济/国内宏观/金融/货币供应量": [
+    {
+      "api_name": "cn_m",
+      "title": "货币供应量",
+      "doc_id": "242"
+    }
+  ],
+  "宏观经济/国际宏观/美国利率": [
+    {
+      "api_name": "us_tbr",
+      "title": "短期国债利率",
+      "doc_id": "221"
+    },
+    {
+      "api_name": "us_tltr",
+      "title": "国债长期利率",
+      "doc_id": "222"
+    },
+    {
+      "api_name": "us_trltr",
+      "title": "国债实际长期利率平均值",
+      "doc_id": "223"
+    },
+    {
+      "api_name": "us_trycr",
+      "title": "国债实际收益率曲线利率",
+      "doc_id": "220"
+    },
+    {
+      "api_name": "us_tycr",
+      "title": "国债收益率曲线利率（日频）",
+      "doc_id": "219"
+    }
+  ],
+  "指数专题": [
+    {
+      "api_name": "ci_daily",
+      "title": "中信行业指数行情",
+      "doc_id": "308"
+    },
+    {
+      "api_name": "ci_index_member",
+      "title": "中信行业成分",
+      "doc_id": "373"
+    },
+    {
+      "api_name": "daily_info",
+      "title": "市场交易统计",
+      "doc_id": "215"
+    },
+    {
+      "api_name": "idx_factor_pro",
+      "title": "指数技术因子(专业版)",
+      "doc_id": "358"
+    },
+    {
+      "api_name": "index_basic",
+      "title": "指数基本信息",
+      "doc_id": "94"
+    },
+    {
+      "api_name": "index_classify",
+      "title": "申万行业分类",
+      "doc_id": "181"
+    },
+    {
+      "api_name": "index_daily",
+      "title": "指数日线行情",
+      "doc_id": "95"
+    },
+    {
+      "api_name": "index_dailybasic",
+      "title": "大盘指数每日指标",
+      "doc_id": "128"
+    },
+    {
+      "api_name": "index_global",
+      "title": "国际指数",
+      "doc_id": "211"
+    },
+    {
+      "api_name": "index_member_all",
+      "title": "申万行业成分构成(分级)",
+      "doc_id": "335"
+    },
+    {
+      "api_name": "index_monthly",
+      "title": "指数月线行情",
+      "doc_id": "172"
+    },
+    {
+      "api_name": "index_weekly",
+      "title": "指数周线行情",
+      "doc_id": "171"
+    },
+    {
+      "api_name": "index_weight",
+      "title": "指数成分和权重",
+      "doc_id": "96"
+    },
+    {
+      "api_name": "rt_idx_k",
+      "title": "",
+      "doc_id": "403"
+    },
+    {
+      "api_name": "sw_daily",
+      "title": "申万行业日线行情",
+      "doc_id": "327"
+    },
+    {
+      "api_name": "sz_daily_info",
+      "title": "深圳市场每日交易概况",
+      "doc_id": "268"
+    }
+  ],
+  "期权数据": [
+    {
+      "api_name": "opt_basic",
+      "title": "期权合约信息",
+      "doc_id": "158"
+    },
+    {
+      "api_name": "opt_daily",
+      "title": "期权日线行情",
+      "doc_id": "159"
+    },
+    {
+      "api_name": "opt_mins",
+      "title": "期权历史分钟行情",
+      "doc_id": "341"
+    }
+  ],
+  "期货数据": [
+    {
+      "api_name": "ft_limit",
+      "title": "期货合约涨跌停价格（盘前）",
+      "doc_id": "368"
+    },
+    {
+      "api_name": "ft_mins",
+      "title": "期货历史分钟行情",
+      "doc_id": "313"
+    },
+    {
+      "api_name": "fut_basic",
+      "title": "期货合约信息表",
+      "doc_id": "135"
+    },
+    {
+      "api_name": "fut_daily",
+      "title": "期货日线行情",
+      "doc_id": "138"
+    },
+    {
+      "api_name": "fut_holding",
+      "title": "每日成交持仓排名",
+      "doc_id": "139"
+    },
+    {
+      "api_name": "fut_mapping",
+      "title": "期货主力与连续合约",
+      "doc_id": "189"
+    },
+    {
+      "api_name": "fut_settle",
+      "title": "结算参数",
+      "doc_id": "141"
+    },
+    {
+      "api_name": "fut_weekly_detail",
+      "title": "期货主要品种交易周报",
+      "doc_id": "216"
+    },
+    {
+      "api_name": "fut_weekly_monthly",
+      "title": "期货周/月线行情(每日更新)",
+      "doc_id": "337"
+    },
+    {
+      "api_name": "fut_wsr",
+      "title": "仓单日报",
+      "doc_id": "140"
+    },
+    {
+      "api_name": "index_daily",
+      "title": "南华期货指数日线行情",
+      "doc_id": "155"
+    },
+    {
+      "api_name": "rt_fut_min",
+      "title": "期货实时分钟行情",
+      "doc_id": "340"
+    },
+    {
+      "api_name": "trade_cal",
+      "title": "交易日历",
+      "doc_id": "137"
+    }
+  ],
+  "港股数据": [
+    {
+      "api_name": "hk_adjfactor",
+      "title": "港股复权因子",
+      "doc_id": "401"
+    },
+    {
+      "api_name": "hk_balancesheet",
+      "title": "港股资产负债表",
+      "doc_id": "390"
+    },
+    {
+      "api_name": "hk_basic",
+      "title": "港股列表",
+      "doc_id": "191"
+    },
+    {
+      "api_name": "hk_cashflow",
+      "title": "港股现金流量表",
+      "doc_id": "391"
+    },
+    {
+      "api_name": "hk_daily",
+      "title": "港股行情",
+      "doc_id": "192"
+    },
+    {
+      "api_name": "hk_daily_adj",
+      "title": "港股复权行情",
+      "doc_id": "339"
+    },
+    {
+      "api_name": "hk_fina_indicator",
+      "title": "港股财务指标数据",
+      "doc_id": "388"
+    },
+    {
+      "api_name": "hk_income",
+      "title": "港股利润表",
+      "doc_id": "389"
+    },
+    {
+      "api_name": "hk_mins",
+      "title": "港股分钟行情",
+      "doc_id": "304"
+    },
+    {
+      "api_name": "hk_tradecal",
+      "title": "港股交易日历",
+      "doc_id": "250"
+    },
+    {
+      "api_name": "rt_hk_k",
+      "title": "港股实时日线",
+      "doc_id": "383"
+    }
+  ],
+  "现货数据": [
+    {
+      "api_name": "sge_basic",
+      "title": "黄金现货基础信息",
+      "doc_id": "284"
+    },
+    {
+      "api_name": "sge_daily",
+      "title": "现货黄金日行情",
+      "doc_id": "285"
+    }
+  ],
+  "美股数据": [
+    {
+      "api_name": "us_adjfactor",
+      "title": "美股复权因子",
+      "doc_id": "402"
+    },
+    {
+      "api_name": "us_balancesheet",
+      "title": "美股资产负债表",
+      "doc_id": "395"
+    },
+    {
+      "api_name": "us_basic",
+      "title": "美股列表",
+      "doc_id": "252"
+    },
+    {
+      "api_name": "us_cashflow",
+      "title": "美股现金流量表",
+      "doc_id": "396"
+    },
+    {
+      "api_name": "us_daily",
+      "title": "美股行情",
+      "doc_id": "254"
+    },
+    {
+      "api_name": "us_daily_adj",
+      "title": "美股复权行情",
+      "doc_id": "338"
+    },
+    {
+      "api_name": "us_fina_indicator",
+      "title": "美股财务指标数据",
+      "doc_id": "393"
+    },
+    {
+      "api_name": "us_income",
+      "title": "美股利润表",
+      "doc_id": "394"
+    },
+    {
+      "api_name": "us_tradecal",
+      "title": "美股交易日历",
+      "doc_id": "253"
+    }
+  ],
+  "股票数据/两融及转融通": [
+    {
+      "api_name": "margin",
+      "title": "融资融券交易汇总",
+      "doc_id": "58"
+    },
+    {
+      "api_name": "margin_detail",
+      "title": "融资融券交易明细",
+      "doc_id": "59"
+    },
+    {
+      "api_name": "margin_secs",
+      "title": "融资融券标的（盘前更新）",
+      "doc_id": "326"
+    },
+    {
+      "api_name": "slb_len",
+      "title": "转融资交易汇总",
+      "doc_id": "331"
+    },
+    {
+      "api_name": "slb_len_mm",
+      "title": "做市借券交易汇总",
+      "doc_id": "334"
+    },
+    {
+      "api_name": "slb_sec",
+      "title": "转融券交易汇总",
+      "doc_id": "332"
+    },
+    {
+      "api_name": "slb_sec_detail",
+      "title": "转融券交易明细",
+      "doc_id": "333"
+    }
+  ],
+  "股票数据/参考数据": [
+    {
+      "api_name": "block_trade",
+      "title": "大宗交易",
+      "doc_id": "161"
+    },
+    {
+      "api_name": "pledge_detail",
+      "title": "股权质押明细",
+      "doc_id": "111"
+    },
+    {
+      "api_name": "pledge_stat",
+      "title": "股权质押统计数据",
+      "doc_id": "110"
+    },
+    {
+      "api_name": "repurchase",
+      "title": "股票回购",
+      "doc_id": "124"
+    },
+    {
+      "api_name": "share_float",
+      "title": "限售股解禁",
+      "doc_id": "160"
+    },
+    {
+      "api_name": "stk_account",
+      "title": "股票账户开户数据",
+      "doc_id": "164"
+    },
+    {
+      "api_name": "stk_account_old",
+      "title": "股票账户开户数据（旧）",
+      "doc_id": "165"
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "title": "股东人数",
+      "doc_id": "166"
+    },
+    {
+      "api_name": "stk_holdertrade",
+      "title": "股东增减持",
+      "doc_id": "175"
+    },
+    {
+      "api_name": "top10_floatholders",
+      "title": "前十大流通股东",
+      "doc_id": "62"
+    },
+    {
+      "api_name": "top10_holders",
+      "title": "前十大股东",
+      "doc_id": "61"
+    }
+  ],
+  "股票数据/基础数据": [
+    {
+      "api_name": "bak_basic",
+      "title": "股票历史列表（历史每天股票列表）",
+      "doc_id": "262"
+    },
+    {
+      "api_name": "bse_mapping",
+      "title": "北交所新旧代码对照表",
+      "doc_id": "375"
+    },
+    {
+      "api_name": "namechange",
+      "title": "股票曾用名",
+      "doc_id": "100"
+    },
+    {
+      "api_name": "new_share",
+      "title": "IPO新股列表",
+      "doc_id": "123"
+    },
+    {
+      "api_name": "stk_managers",
+      "title": "上市公司管理层",
+      "doc_id": "193"
+    },
+    {
+      "api_name": "stk_premarket",
+      "title": "股本情况（盘前）",
+      "doc_id": "329"
+    },
+    {
+      "api_name": "stk_rewards",
+      "title": "管理层薪酬和持股",
+      "doc_id": "194"
+    },
+    {
+      "api_name": "stock_basic",
+      "title": "基础信息",
+      "doc_id": "25"
+    },
+    {
+      "api_name": "stock_company",
+      "title": "上市公司基本信息",
+      "doc_id": "112"
+    },
+    {
+      "api_name": "stock_hsgt",
+      "title": "沪深港通股票列表",
+      "doc_id": "398"
+    },
+    {
+      "api_name": "stock_st",
+      "title": "ST股票列表",
+      "doc_id": "397"
+    },
+    {
+      "api_name": "trade_cal",
+      "title": "交易日历",
+      "doc_id": "26"
+    }
+  ],
+  "股票数据/打板专题数据": [
+    {
+      "api_name": "dc_daily",
+      "title": "东财概念板块行情",
+      "doc_id": "382"
+    },
+    {
+      "api_name": "dc_hot",
+      "title": "东方财富热板",
+      "doc_id": "321"
+    },
+    {
+      "api_name": "dc_index",
+      "title": "东方财富概念板块",
+      "doc_id": "362"
+    },
+    {
+      "api_name": "dc_member",
+      "title": "东方财富板块成分",
+      "doc_id": "363"
+    },
+    {
+      "api_name": "hm_detail",
+      "title": "游资每日明细",
+      "doc_id": "312"
+    },
+    {
+      "api_name": "hm_list",
+      "title": "游资名录",
+      "doc_id": "311"
+    },
+    {
+      "api_name": "kpl_concept",
+      "title": "开盘啦题材库",
+      "doc_id": "350"
+    },
+    {
+      "api_name": "kpl_concept_cons",
+      "title": "开盘啦题材成分",
+      "doc_id": "351"
+    },
+    {
+      "api_name": "kpl_list",
+      "title": "开盘啦榜单数据",
+      "doc_id": "347"
+    },
+    {
+      "api_name": "limit_cpt_list",
+      "title": "最强板块统计",
+      "doc_id": "357"
+    },
+    {
+      "api_name": "limit_list_d",
+      "title": "涨跌停列表（新）",
+      "doc_id": "298"
+    },
+    {
+      "api_name": "limit_list_ths",
+      "title": "涨跌停榜单（同花顺）",
+      "doc_id": "355"
+    },
+    {
+      "api_name": "limit_step",
+      "title": "连板天梯",
+      "doc_id": "356"
+    },
+    {
+      "api_name": "stk_auction",
+      "title": "当日集合竞价",
+      "doc_id": "369"
+    },
+    {
+      "api_name": "tdx_daily",
+      "title": "通达信板块行情",
+      "doc_id": "378"
+    },
+    {
+      "api_name": "tdx_index",
+      "title": "通达信板块信息",
+      "doc_id": "376"
+    },
+    {
+      "api_name": "tdx_member",
+      "title": "通达信板块成分",
+      "doc_id": "377"
+    },
+    {
+      "api_name": "ths_daily",
+      "title": "同花顺板块指数行情",
+      "doc_id": "260"
+    },
+    {
+      "api_name": "ths_hot",
+      "title": "同花顺热榜",
+      "doc_id": "320"
+    },
+    {
+      "api_name": "ths_index",
+      "title": "同花顺概念和行业指数",
+      "doc_id": "259"
+    },
+    {
+      "api_name": "ths_member",
+      "title": "同花顺概念板块成分",
+      "doc_id": "261"
+    },
+    {
+      "api_name": "top_inst",
+      "title": "龙虎榜机构明细",
+      "doc_id": "107"
+    },
+    {
+      "api_name": "top_list",
+      "title": "龙虎榜每日明细",
+      "doc_id": "106"
+    }
+  ],
+  "股票数据/特色数据": [
+    {
+      "api_name": "broker_recommend",
+      "title": "券商每月荐股",
+      "doc_id": "267"
+    },
+    {
+      "api_name": "ccass_hold",
+      "title": "中央结算系统持股汇总",
+      "doc_id": "295"
+    },
+    {
+      "api_name": "ccass_hold_detail",
+      "title": "中央结算系统持股明细",
+      "doc_id": "274"
+    },
+    {
+      "api_name": "cyq_chips",
+      "title": "每日筹码分布",
+      "doc_id": "294"
+    },
+    {
+      "api_name": "cyq_perf",
+      "title": "每日筹码及胜率",
+      "doc_id": "293"
+    },
+    {
+      "api_name": "hk_hold",
+      "title": "沪深港股通持股明细",
+      "doc_id": "188"
+    },
+    {
+      "api_name": "report_rc",
+      "title": "卖方盈利预测数据",
+      "doc_id": "292"
+    },
+    {
+      "api_name": "stk_ah_comparison",
+      "title": "AH股比价",
+      "doc_id": "399"
+    },
+    {
+      "api_name": "stk_auction_c",
+      "title": "股票收盘集合竞价数据",
+      "doc_id": "354"
+    },
+    {
+      "api_name": "stk_auction_o",
+      "title": "股票开盘集合竞价数据",
+      "doc_id": "353"
+    },
+    {
+      "api_name": "stk_factor",
+      "title": "股票技术因子（量化因子）",
+      "doc_id": "296"
+    },
+    {
+      "api_name": "stk_factor_pro",
+      "title": "股票技术面因子(专业版)",
+      "doc_id": "328"
+    },
+    {
+      "api_name": "stk_nineturn",
+      "title": "神奇九转指标",
+      "doc_id": "364"
+    },
+    {
+      "api_name": "stk_surv",
+      "title": "机构调研表",
+      "doc_id": "275"
+    }
+  ],
+  "股票数据/行情数据": [
+    {
+      "api_name": "adj_factor",
+      "title": "复权因子",
+      "doc_id": "28"
+    },
+    {
+      "api_name": "bak_daily",
+      "title": "备用行情",
+      "doc_id": "255"
+    },
+    {
+      "api_name": "daily",
+      "title": "A股日线行情",
+      "doc_id": "27"
+    },
+    {
+      "api_name": "daily_basic",
+      "title": "每日指标",
+      "doc_id": "32"
+    },
+    {
+      "api_name": "ggt_daily",
+      "title": "港股通每日成交统计",
+      "doc_id": "196"
+    },
+    {
+      "api_name": "ggt_monthly",
+      "title": "港股通每月成交统计",
+      "doc_id": "197"
+    },
+    {
+      "api_name": "ggt_top10",
+      "title": "港股通十大成交股",
+      "doc_id": "49"
+    },
+    {
+      "api_name": "hsgt_top10",
+      "title": "沪深股通十大成交股",
+      "doc_id": "48"
+    },
+    {
+      "api_name": "monthly",
+      "title": "月线行情",
+      "doc_id": "145"
+    },
+    {
+      "api_name": "pro_bar",
+      "title": "通用行情接口",
+      "doc_id": "109"
+    },
+    {
+      "api_name": "realtime_list",
+      "title": "实时涨跌幅排名(爬虫版)",
+      "doc_id": "317"
+    },
+    {
+      "api_name": "realtime_quote",
+      "title": "实时盘口TICK快照(爬虫版)",
+      "doc_id": "315"
+    },
+    {
+      "api_name": "realtime_tick",
+      "title": "实时成交数据(爬虫版)",
+      "doc_id": "316"
+    },
+    {
+      "api_name": "rt_k",
+      "title": "沪深京实时日线",
+      "doc_id": "372"
+    },
+    {
+      "api_name": "rt_min",
+      "title": "A股实时分钟",
+      "doc_id": "374"
+    },
+    {
+      "api_name": "stk_limit",
+      "title": "每日涨跌停价格",
+      "doc_id": "183"
+    },
+    {
+      "api_name": "stk_mins",
+      "title": "股票历史分钟行情",
+      "doc_id": "370"
+    },
+    {
+      "api_name": "stk_week_month_adj",
+      "title": "股票周/月线行情(复权--每日更新)",
+      "doc_id": "365"
+    },
+    {
+      "api_name": "stk_weekly_monthly",
+      "title": "股票周/月线行情(每日更新)",
+      "doc_id": "336"
+    },
+    {
+      "api_name": "suspend_d更新时间",
+      "title": "每日停复牌信息",
+      "doc_id": "214"
+    },
+    {
+      "api_name": "weekly",
+      "title": "周线行情",
+      "doc_id": "144"
+    }
+  ],
+  "股票数据/财务数据": [
+    {
+      "api_name": "balancesheet",
+      "title": "资产负债表",
+      "doc_id": "36"
+    },
+    {
+      "api_name": "cashflow",
+      "title": "现金流量表",
+      "doc_id": "44"
+    },
+    {
+      "api_name": "disclosure_date",
+      "title": "财报披露计划",
+      "doc_id": "162"
+    },
+    {
+      "api_name": "dividend",
+      "title": "分红送股",
+      "doc_id": "103"
+    },
+    {
+      "api_name": "express",
+      "title": "业绩快报",
+      "doc_id": "46"
+    },
+    {
+      "api_name": "fina_audit",
+      "title": "财务审计意见",
+      "doc_id": "80"
+    },
+    {
+      "api_name": "fina_indicator",
+      "title": "财务指标数据",
+      "doc_id": "79"
+    },
+    {
+      "api_name": "fina_mainbz",
+      "title": "主营业务构成",
+      "doc_id": "81"
+    },
+    {
+      "api_name": "forecast",
+      "title": "业绩预告",
+      "doc_id": "45"
+    },
+    {
+      "api_name": "income",
+      "title": "利润表",
+      "doc_id": "33"
+    }
+  ],
+  "股票数据/资金流向数据": [
+    {
+      "api_name": "moneyflow",
+      "title": "个股资金流向",
+      "doc_id": "170"
+    },
+    {
+      "api_name": "moneyflow_cnt_ths",
+      "title": "同花顺概念板块资金流向（THS）",
+      "doc_id": "371"
+    },
+    {
+      "api_name": "moneyflow_dc",
+      "title": "个股资金流向（DC）",
+      "doc_id": "349"
+    },
+    {
+      "api_name": "moneyflow_hsgt",
+      "title": "沪深港通资金流向",
+      "doc_id": "47"
+    },
+    {
+      "api_name": "moneyflow_ind_dc",
+      "title": "东财概念及行业板块资金流向（DC）",
+      "doc_id": "344"
+    },
+    {
+      "api_name": "moneyflow_ind_ths",
+      "title": "同花顺行业资金流向（THS）",
+      "doc_id": "343"
+    },
+    {
+      "api_name": "moneyflow_mkt_dc",
+      "title": "大盘资金流向（DC）",
+      "doc_id": "345"
+    },
+    {
+      "api_name": "moneyflow_ths",
+      "title": "个股资金流向（THS）",
+      "doc_id": "348"
+    }
+  ],
+  "行业经济/TMT行业": [
+    {
+      "api_name": "bo_cinema",
+      "title": "影院每日票房",
+      "doc_id": "116"
+    },
+    {
+      "api_name": "bo_daily",
+      "title": "电影日度票房",
+      "doc_id": "115"
+    },
+    {
+      "api_name": "bo_monthly",
+      "title": "电影月度票房",
+      "doc_id": "113"
+    },
+    {
+      "api_name": "bo_weekly",
+      "title": "电影周度票房",
+      "doc_id": "114"
+    },
+    {
+      "api_name": "film_record",
+      "title": "全国电影剧本备案数据",
+      "doc_id": "156"
+    },
+    {
+      "api_name": "teleplay_record",
+      "title": "全国拍摄制作电视剧备案公示数据",
+      "doc_id": "180"
+    },
+    {
+      "api_name": "tmt_twincome",
+      "title": "台湾电子产业月营收",
+      "doc_id": "88"
+    },
+    {
+      "api_name": "tmt_twincomedetail",
+      "title": "台湾电子产业月营收明细",
+      "doc_id": "87"
+    }
+  ],
+  "财富管理/基金销售行业数据": [
+    {
+      "api_name": "fund_sales_ratio",
+      "title": "各渠道公募基金销售保有规模占比",
+      "doc_id": "265"
+    },
+    {
+      "api_name": "fund_sales_vol",
+      "title": "销售机构公募基金销售保有规模",
+      "doc_id": "266"
+    }
+  ]
+}

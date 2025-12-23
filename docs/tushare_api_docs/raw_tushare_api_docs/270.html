@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushare数据</title>
+<meta content="免费股票数据,开源股票数据接口,股票数据,股票数据接口,python股票数据,财经数据,金融数据,行业大数据,区块链数据,量化投资,知识图谱" name="keywords"/>
+<meta name="description" content="Tushare为金融数据分析提供便捷、快速的接口，与投研和量化策略无缝对接"/>
+<meta content="index,follow" name="robots"/>
+<meta name="application-name" content="Tushare"/>
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-192x192.png?v=811d9139fa2ea47f5595907da1f3c34d" sizes="192x192">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-96x96.png?v=4960eb8103c873c586ad41ef3f53db84" sizes="96x96">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-16x16.png?v=f7299bbce2cff4db7e3dfa6fb8c6a73c" sizes="16x16">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-32x32.png?v=a5df4bdd9f96de59f57bb9a7a50d8f96" sizes="32x32">
+<link href="/static/vendors/bootstrap/dist/css/bootstrap.min.css?v=d7ac98c842e4ec59d2c21fef89fce09c" rel="stylesheet">
+<link href="/static/vendors/jstree/themes/default/style.min.css?v=779fc4b400d1748ec2fb99685ad80550" rel="stylesheet">
+<link href="/static/frontend/css/custom.css?v=4fa43e55f2c16eefe67590de5aa70309" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/static/vendors/requirejs/require.js?v=6da8be361b9ee26c5e721e76c6d4afce"></script>
+<script type="text/javascript" src="/static/frontend/js/config.js?v=85f0040a930464e1c6dbc61026f79de8"></script>
+</head>
+<body style="height:100%">
+<div id="page" style="height:100%;">
+<header id="header" class="site-header">
+<nav id="navbar" class="site-navbar navbar navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars" style="font-size: 1.5em; padding: 15px 0;"></i>
+</button>
+<h1 class="navbar-brand">
+<a href="/"><img src="/static/frontend/images/logo.png?v=39c50795cb540b4463114d1bf3135d6e" alt="tushare"></a>
+</h1>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul id="navigation" class="nav navbar-nav navbar-right">
+<li><a href="/">首页</a></li>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+<!-- <li><a href="/document/41">另类数据</a></li>-->
+<li><a href="/news/sina">资讯数据</a></li>
+<li><a href="/webclient">数据工具</a></li>
+
+<li class="navbar-tail"><a href="/login" class="btn btn-xs pull-right">登 录</a><a href="/register" class="btn btn-xs pull-right">注 册</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+
+<section class="section center section-cta section-whole">
+<div class="container">
+<div id="login" class="row plain_inputcase">
+<div class="title">
+<span>用户登录</span>
+</div>
+<div class="second-title">
+<span>Tushare - 专注于数据</span>
+</div>
+<div class="ln-dashed"></div>
+<div class="content">
+<div class="text-center prompt">
+没有账号？
+<span class="fa fa-long-arrow-right"></span>
+<a href="/register" class="btn-link">注册</a>
+</div>
+<form id="login-form" class="form-horizontal left">
+<input type="hidden" name="_xsrf" value="07756d03-3944-4047-be41-2a0cae6f0348"/>
+<div class="input-prepend input-group col-md-12 col-xs-12">
+<span class="add-on input-group-addon">
+<span class="fa fa-mobile"></span>
+</span>
+<input id="login-account" name="account" type="text" maxlength="128"
+placeholder="登录账号（手机或邮箱）" class="form-control">
+</div>
+<div class="input-prepend input-group col-md-12 col-xs-12">
+<span class="add-on input-group-addon">
+<span class="fa fa-key"></span>
+</span>
+<input id="login-password" name="password" type="password" maxlength="128"
+placeholder="登录密码（至少6位非空字符）" class="form-control">
+</div>
+<div class="input-prepend input-group col-md-12 col-xs-12">
+<span class="add-on input-group-addon">
+<span class="fa fa-image"></span>
+</span>
+<input id="login-captcha" name="captcha" type="text" maxlength="6"
+placeholder="图形验证码（4位字符）" class="form-control">
+<span class="add-on input-group-addon append">
+<img id="login-captcha-img" class="captcha" data-action="login"
+src="/captcha?action=login&unique_id=8741d8e8cdec11f0a01300163e431fef1764507621370099">
+</span>
+</div>
+<div class="col-md--2 pull-right">
+<a href="/resetpswd" class="btn-link"><span class="text-gray">忘记密码？</spanc></a>
+</div>
+<div id="login-common-info" class="col-md-offset-1 hidden">
+<label class=""></label>
+</div>
+<div class="form-group">
+<div class="col-md-12 col-xs-12">
+<button id="login-btn" type="submit" class="btn">
+登 &nbsp;&nbsp; 录
+</button>
+</div>
+</div>
+</form>
+<div class="ln-dashed"></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="footer" class="site-footer">
+<div class="container">
+<div class="row footer-panel">
+<div class="col-md-4">
+<div class=""><img src="/static/frontend/images/wechat_public.png?v=847e8d705d3a409d000dce413ab5c257" alt=""></div>
+</div>
+<div class="col-md-4">
+<div class="title">使用文档</div>
+<div class="content">
+<ul>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+<li><a href="/document/41">区块链</a></li>
+<li><a href="/news">资讯数据</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4">
+<div class="title">关注我们</div>
+<div class="content">
+<ul>
+<li>QQ群: 958517905</li>
+<li>公众号：waditu</li>
+<li>Github：<a href="https://github.com/waditu" target="_blank">https://github.com/waditu</a></li>
+<li>雪 球：<a href="https://xueqiu.com/u/9103835084" target="_blank">https://xueqiu.com/u/9103835084</a></li>
+<li>微 博：<a href="https://weibo.com/u/1304687120" target="_blank">https://weibo.com/u/1304687120</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row footer-footer">
+<div class="copyright"><p>&copy; 2018 Tushare <a href='https://beian.miit.gov.cn' target="_blank">
+"沪ICP备2020031644号"
+</a></p></div>
+</div>
+</div>
+</footer>
+
+</div>
+<div class="scroll-to-top" data-spy="affix" data-offset-top="200">
+<a href="#page" class="smooth-scroll">置顶</a>
+</div>
+</body>
+<script type="text/javascript">
+require(['custom']);
+</script>
+
+
+</html>

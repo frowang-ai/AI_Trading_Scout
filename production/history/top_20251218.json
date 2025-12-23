@@ -1,0 +1,306 @@
+{
+  "date": "20251218",
+  "top_n": 50,
+  "items": [
+    {
+      "ts_code": "301507.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 14.275480270385742,
+      "rank": 1
+    },
+    {
+      "ts_code": "603022.SH",
+      "trade_date": "20251218",
+      "predicted_score": 14.105886459350586,
+      "rank": 2
+    },
+    {
+      "ts_code": "002849.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 14.083108901977539,
+      "rank": 3
+    },
+    {
+      "ts_code": "002322.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 14.060382843017578,
+      "rank": 4
+    },
+    {
+      "ts_code": "603882.SH",
+      "trade_date": "20251218",
+      "predicted_score": 13.984241485595703,
+      "rank": 5
+    },
+    {
+      "ts_code": "002103.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 13.820027351379395,
+      "rank": 6
+    },
+    {
+      "ts_code": "603883.SH",
+      "trade_date": "20251218",
+      "predicted_score": 13.622698783874512,
+      "rank": 7
+    },
+    {
+      "ts_code": "688090.SH",
+      "trade_date": "20251218",
+      "predicted_score": 13.58139705657959,
+      "rank": 8
+    },
+    {
+      "ts_code": "301272.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 13.174359321594238,
+      "rank": 9
+    },
+    {
+      "ts_code": "002852.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 13.140944480895996,
+      "rank": 10
+    },
+    {
+      "ts_code": "603205.SH",
+      "trade_date": "20251218",
+      "predicted_score": 13.114612579345703,
+      "rank": 11
+    },
+    {
+      "ts_code": "603676.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.98751449584961,
+      "rank": 12
+    },
+    {
+      "ts_code": "605266.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.957048416137695,
+      "rank": 13
+    },
+    {
+      "ts_code": "601618.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.84705924987793,
+      "rank": 14
+    },
+    {
+      "ts_code": "300314.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.81122875213623,
+      "rank": 15
+    },
+    {
+      "ts_code": "600188.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.8103666305542,
+      "rank": 16
+    },
+    {
+      "ts_code": "000751.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.77119255065918,
+      "rank": 17
+    },
+    {
+      "ts_code": "301011.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.761174201965332,
+      "rank": 18
+    },
+    {
+      "ts_code": "002551.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.75920581817627,
+      "rank": 19
+    },
+    {
+      "ts_code": "002715.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.712127685546875,
+      "rank": 20
+    },
+    {
+      "ts_code": "600137.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.694257736206055,
+      "rank": 21
+    },
+    {
+      "ts_code": "603517.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.692527770996094,
+      "rank": 22
+    },
+    {
+      "ts_code": "688193.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.683273315429688,
+      "rank": 23
+    },
+    {
+      "ts_code": "600833.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.627459526062012,
+      "rank": 24
+    },
+    {
+      "ts_code": "600009.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.62421703338623,
+      "rank": 25
+    },
+    {
+      "ts_code": "600812.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.602617263793945,
+      "rank": 26
+    },
+    {
+      "ts_code": "601699.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.544013977050781,
+      "rank": 27
+    },
+    {
+      "ts_code": "300809.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.512084007263184,
+      "rank": 28
+    },
+    {
+      "ts_code": "001230.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.506049156188965,
+      "rank": 29
+    },
+    {
+      "ts_code": "301287.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.502793312072754,
+      "rank": 30
+    },
+    {
+      "ts_code": "301336.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.473713874816895,
+      "rank": 31
+    },
+    {
+      "ts_code": "600439.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.394569396972656,
+      "rank": 32
+    },
+    {
+      "ts_code": "300562.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.376434326171875,
+      "rank": 33
+    },
+    {
+      "ts_code": "601939.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.348898887634277,
+      "rank": 34
+    },
+    {
+      "ts_code": "600784.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.300026893615723,
+      "rank": 35
+    },
+    {
+      "ts_code": "002376.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.295806884765625,
+      "rank": 36
+    },
+    {
+      "ts_code": "000719.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.234779357910156,
+      "rank": 37
+    },
+    {
+      "ts_code": "301126.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.19823932647705,
+      "rank": 38
+    },
+    {
+      "ts_code": "688289.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.175958633422852,
+      "rank": 39
+    },
+    {
+      "ts_code": "600261.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.159311294555664,
+      "rank": 40
+    },
+    {
+      "ts_code": "600476.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.143143653869629,
+      "rank": 41
+    },
+    {
+      "ts_code": "603206.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.102248191833496,
+      "rank": 42
+    },
+    {
+      "ts_code": "300703.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.101625442504883,
+      "rank": 43
+    },
+    {
+      "ts_code": "300787.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.07174015045166,
+      "rank": 44
+    },
+    {
+      "ts_code": "600926.SH",
+      "trade_date": "20251218",
+      "predicted_score": 12.071311950683594,
+      "rank": 45
+    },
+    {
+      "ts_code": "301135.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 12.010836601257324,
+      "rank": 46
+    },
+    {
+      "ts_code": "002688.SZ",
+      "trade_date": "20251218",
+      "predicted_score": 11.997974395751953,
+      "rank": 47
+    },
+    {
+      "ts_code": "603387.SH",
+      "trade_date": "20251218",
+      "predicted_score": 11.983713150024414,
+      "rank": 48
+    },
+    {
+      "ts_code": "688553.SH",
+      "trade_date": "20251218",
+      "predicted_score": 11.983635902404785,
+      "rank": 49
+    },
+    {
+      "ts_code": "600056.SH",
+      "trade_date": "20251218",
+      "predicted_score": 11.969759941101074,
+      "rank": 50
+    }
+  ]
+}
