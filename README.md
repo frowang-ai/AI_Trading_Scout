@@ -100,9 +100,9 @@ AI Trading Scout 是一个围绕「日常交易与投研工作流」搭建的 Py
 
 - `docs/`：  
   - 更详细的架构与策略设计文档，例如：
-    - `architecture_design.md`：整体架构设计；
-    - `daily_production_pipeline.md`：每日收盘流水线的详细说明；
-    - `data_strategy.md`、`factor_calculation_strategy.md` 等。
+    - `architecture/architecture_design.md`：整体架构设计；
+    - `architecture/daily_production_pipeline.md`：每日收盘流水线的详细说明；
+    - `data/data_strategy.md`、`strategy/factor_calculation_strategy.md` 等。
 
 ---
 
@@ -377,10 +377,9 @@ python demo/demo2-抓取行业数据/run_daily_industry_concept_demo.py
 ---
 
 如果你在阅读或使用过程中遇到任何不清晰的地方，可以优先查看：
-- `docs/architecture_design.md:1` —— 项目整体架构设计  
-- `docs/daily_production_pipeline.md:1` —— 每日生产流水线的详细说明  
+- `docs/architecture/architecture_design.md:1` —— 项目整体架构设计  
+- `docs/architecture/daily_production_pipeline.md:1` —— 每日生产流水线的详细说明  
 - `backtest/README.md:1` —— 回测模块说明  
 - `LLMClient_v2/README.md:1` —— LLM 客户端与配置说明  
 
 也欢迎在这些基础上扩展你自己的模块与文档。 
-

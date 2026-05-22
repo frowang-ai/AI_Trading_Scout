@@ -39,6 +39,7 @@ ENV/
 
 # 数据文件（可选，如果数据量大可以取消注释）
 data/
+财联社电报数据/
 
 # 不需要进仓库的大体积输出
 production_output/
@@ -57,3 +58,8 @@ htmlcov/
 # 系统文件
 .DS_Store
 Thumbs.db
+docs/reference/tushare_api_docs/nul
+
+# coding agent
+.claude
+.serena

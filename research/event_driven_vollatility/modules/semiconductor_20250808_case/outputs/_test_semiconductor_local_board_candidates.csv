@@ -1,0 +1,28 @@
+﻿source_file,code,name,matched_text
+ths_index_20251222.parquet,885756.TI,芯片概念,885756.TI 芯片概念 A 20170718 N
+ths_index_20251222.parquet,885864.TI,光刻胶,885864.TI 光刻胶 A 20190718 N
+ths_index_20251222.parquet,885897.TI,中芯国际概念,885897.TI 中芯国际概念 A 20200703 N
+ths_index_20251222.parquet,885908.TI,第三代半导体,885908.TI 第三代半导体 A 20200907 N
+ths_index_20251222.parquet,885925.TI,MCU芯片,885925.TI MCU芯片 A 20210621 N
+ths_index_20251222.parquet,885945.TI,汽车芯片,885945.TI 汽车芯片 A 20211209 N
+ths_index_20251222.parquet,886042.TI,存储芯片,886042.TI 存储芯片 A 20230413 N
+ths_index_20251222.parquet,886054.TI,光刻机,886054.TI 光刻机 A 20230908 N
+dc_index_20251222.parquet,BK1137.DC,存储芯片,BK1137.DC 20251222 存储芯片 精智达 688627.SH
+dc_index_20251222.parquet,BK1127.DC,AI芯片,BK1127.DC 20251222 AI芯片 国科微 300672.SZ
+dc_index_20251222.parquet,BK1121.DC,第四代半导体,BK1121.DC 20251222 第四代半导体 南大光电 300346.SZ
+dc_index_20251222.parquet,BK1036.DC,半导体,BK1036.DC 20251222 半导体 立昂微 605358.SH
+dc_index_20251222.parquet,BK0969.DC,汽车芯片,BK0969.DC 20251222 汽车芯片 北斗星通 002151.SZ
+dc_index_20251222.parquet,BK0952.DC,第三代半导体,BK0952.DC 20251222 第三代半导体 智光电气 002169.SZ
+dc_index_20251222.parquet,BK0917.DC,半导体概念,BK0917.DC 20251222 半导体概念 智光电气 002169.SZ
+dc_index_20251222.parquet,BK0891.DC,国产芯片,BK0891.DC 20251222 国产芯片 东方智造 002175.SZ
+dc_index_20251222.parquet,BK0884.DC,光刻机(胶),BK0884.DC 20251222 光刻机(胶) 兴业股份 603928.SH
+index_classify_L3_20251222.parquet,850813.SI,半导体材料,850813.SI 半导体材料 L3 270103 1 270100 SW2021
+index_classify_L3_20251222.parquet,850814.SI,数字芯片设计,850814.SI 数字芯片设计 L3 270104 1 270100 SW2021
+index_classify_L3_20251222.parquet,850815.SI,模拟芯片设计,850815.SI 模拟芯片设计 L3 270105 1 270100 SW2021
+index_classify_L3_20251222.parquet,850816.SI,集成电路制造,850816.SI 集成电路制造 L3 270106 0 270100 SW2021
+index_classify_L3_20251222.parquet,850817.SI,集成电路封测,850817.SI 集成电路封测 L3 270107 1 270100 SW2021
+index_classify_L3_20251222.parquet,850818.SI,半导体设备,850818.SI 半导体设备 L3 270108 1 270100 SW2021
+ci_index_dim_20251222.parquet,CI005538.CI,集成电路,20251222 CI005538.CI L3 集成电路
+ci_index_dim_20251222.parquet,CI005540.CI,半导体材料,20251222 CI005540.CI L3 半导体材料
+ci_index_dim_20251222.parquet,CI005541.CI,半导体设备,20251222 CI005541.CI L3 半导体设备
+ci_index_dim_20251222.parquet,CI005834.CI,半导体,20251222 CI005834.CI L2 半导体
