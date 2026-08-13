@@ -1,0 +1,6 @@
+data/
+__pycache__/
+diagnostics/
+symbols.txt
+_test_*.json
+watchlists/_test_*.json
