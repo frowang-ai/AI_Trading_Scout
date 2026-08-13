@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-08-13T20:30:19.593000+08:00",
+  "selection": "沪深A股先剔除上市不足3个月，再按total_mv降序取前99只，加蓝色光标300058.SZ",
+  "listing_age_rule": "list_date <= trade_date - 3 calendar months",
+  "listing_cutoff_date": "20260513",
+  "market_cap_field": "Tushare daily_basic.total_mv",
+  "market_cap_unit_source": "万元",
+  "trade_date": "20260813",
+  "source_path": "data/raw/daily/2026/daily_basic_20260813.parquet",
+  "names_source_path": "data/raw/daily/2026/stock_basic_20260813.parquet",
+  "selected_count": 100,
+  "missing_name_count": 0,
+  "blue_cursor_market_cap_rank": 366,
+  "blue_cursor_market_cap_rank_all_sh_sz_a": 370,
+  "blue_cursor_forced": true,
+  "top99_cutoff_total_mv_cny_100m": 1721.30482368,
+  "excluded_under_3m_count": 18,
+  "excluded_under_3m_top": [
+    {
+      "ts_code": "688825.SH",
+      "name": "长鑫科技",
+      "list_date": "20260727",
+      "total_mv": 353666125.6968,
+      "market_cap_rank_all_sh_sz_a": 1
+    },
+    {
+      "ts_code": "001399.SZ",
+      "name": "惠科股份",
+      "list_date": "20260626",
+      "total_mv": 17688637.6536,
+      "market_cap_rank_all_sh_sz_a": 95
+    },
+    {
+      "ts_code": "001248.SZ",
+      "name": "华润新能源",
+      "list_date": "20260702",
+      "total_mv": 17424669.6732,
+      "market_cap_rank_all_sh_sz_a": 100
+    },
+    {
+      "ts_code": "001232.SZ",
+      "name": "嘉立创",
+      "list_date": "20260804",
+      "total_mv": 9293963.24,
+      "market_cap_rank_all_sh_sz_a": 209
+    },
+    {
+      "ts_code": "301717.SZ",
+      "name": "C超纯应材",
+      "list_date": "20260811",
+      "total_mv": 5204137.1276,
+      "market_cap_rank_all_sh_sz_a": 402
+    },
+    {
+      "ts_code": "688797.SH",
+      "name": "臻宝科技",
+      "list_date": "20260624",
+      "total_mv": 5202225.05,
+      "market_cap_rank_all_sh_sz_a": 403
+    },
+    {
+      "ts_code": "688828.SH",
+      "name": "C国仪",
+      "list_date": "20260811",
+      "total_mv": 3940498.51,
+      "market_cap_rank_all_sh_sz_a": 507
+    },
+    {
+      "ts_code": "301707.SZ",
+      "name": "C展芯股份",
+      "list_date": "20260807",
+      "total_mv": 3750052.8,
+      "market_cap_rank_all_sh_sz_a": 543
+    },
+    {
+      "ts_code": "688635.SH",
+      "name": "长进光子",
+      "list_date": "20260527",
+      "total_mv": 2921567.3,
+      "market_cap_rank_all_sh_sz_a": 685
+    },
+    {
+      "ts_code": "301583.SZ",
+      "name": "托伦斯",
+      "list_date": "20260710",
+      "total_mv": 2876697.087,
+      "market_cap_rank_all_sh_sz_a": 696
+    },
+    {
+      "ts_code": "603435.SH",
+      "name": "嘉德利",
+      "list_date": "20260522",
+      "total_mv": 2437720.2575,
+      "market_cap_rank_all_sh_sz_a": 803
+    },
+    {
+      "ts_code": "001365.SZ",
+      "name": "天海电子",
+      "list_date": "20260518",
+      "total_mv": 1983450.0,
+      "market_cap_rank_all_sh_sz_a": 997
+    },
+    {
+      "ts_code": "301669.SZ",
+      "name": "高特电子",
+      "list_date": "20260609",
+      "total_mv": 1427520.0,
+      "market_cap_rank_all_sh_sz_a": 1344
+    },
+    {
+      "ts_code": "688806.SH",
+      "name": "泰诺麦博",
+      "list_date": "20260721",
+      "total_mv": 1284002.8056,
+      "market_cap_rank_all_sh_sz_a": 1480
+    },
+    {
+      "ts_code": "001393.SZ",
+      "name": "维通利",
+      "list_date": "20260515",
+      "total_mv": 1114520.298,
+      "market_cap_rank_all_sh_sz_a": 1674
+    },
+    {
+      "ts_code": "603468.SH",
+      "name": "C津富",
+      "list_date": "20260806",
+      "total_mv": 1103929.7126,
+      "market_cap_rank_all_sh_sz_a": 1688
+    },
+    {
+      "ts_code": "001237.SZ",
+      "name": "惠康科技",
+      "list_date": "20260522",
+      "total_mv": 812223.915,
+      "market_cap_rank_all_sh_sz_a": 2169
+    },
+    {
+      "ts_code": "301677.SZ",
+      "name": "欣兴工具",
+      "list_date": "20260730",
+      "total_mv": 612700.0,
+      "market_cap_rank_all_sh_sz_a": 2705
+    }
+  ],
+  "symbols_path": "realtime_alert/symbols.txt",
+  "versioned_symbols_path": "realtime_alert/watchlists/symbols_market_cap_top99_plus_blue_cursor_20260813.txt",
+  "csv_path": "realtime_alert/watchlists/market_cap_top99_plus_blue_cursor_20260813.csv"
+}
