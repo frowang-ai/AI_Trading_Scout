@@ -5,9 +5,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-# 部署时将下面路径替换为服务器上的仓库绝对路径。
-WorkingDirectory=/opt/AI_Trading_Scout
-ExecStart=/opt/AI_Trading_Scout/.venv/bin/python -m realtime_alert.collector --symbols-file symbols.txt --market-hours
+WorkingDirectory=/home/website/AI_Trading_Scout
+ExecStart=/home/website/AI_Trading_Scout/.venv/bin/python -m realtime_alert.collector --symbols-file symbols.txt --market-hours
 Restart=on-failure
 RestartSec=10
 TimeoutStopSec=30
